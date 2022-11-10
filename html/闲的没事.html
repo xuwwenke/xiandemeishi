@@ -80,7 +80,15 @@
 	</style> 
 	</head> 
 	<body> 
-		<embed src="../music/1.mp3" hidden="true" autostart="true" loop="true">
+		<audio autoplay="autopaly" loop="loop" id="audios">
+			 <source src="../music/1.mp3" type="audio/mp3" />
+		</audio>
+		<script>
+			// 将以下代码添加到js入口函数内即可
+			document.addEventListener('click', function() {
+				document.getElementById('audios').play()
+			})
+		</script>
 		<div id="heart3D">     
 			<div id="cube"><!--顺序：上、下、左、右、前、后-->           
 				<div>
